@@ -1,0 +1,4 @@
+mcp_servers:
+  econtract:
+    url: "https://api.econtract.online/mcp"
+    auth: oauth

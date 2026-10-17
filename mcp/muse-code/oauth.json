@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "mcp_servers": {
+    "econtract": {
+      "transport": "streamable_http",
+      "url": "https://api.econtract.online/mcp"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+[mcp_servers.econtract]
+url = "https://api.econtract.online/mcp"
+bearer_token_env_var = "ECONTRACT_API_KEY"

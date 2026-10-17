@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "online.econtract/mcp",
+  "title": "eContract",
+  "description": "Send contracts for e-signature, track signing, get signed PDFs and audit trails, verify any PDF.",
+  "version": "1.0.0",
+  "websiteUrl": "https://econtract.online/mcp",
+  "icons": [
+    {
+      "src": "https://econtract.online/logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.econtract.online/mcp"
+    }
+  ]
+}

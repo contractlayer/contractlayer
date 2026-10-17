@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "mcp_servers": {
+    "econtract": {
+      "transport": "streamable_http",
+      "url": "https://api.econtract.online/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ECONTRACT_API_KEY}"
+      }
+    }
+  }
+}

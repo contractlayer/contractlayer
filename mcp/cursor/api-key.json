@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "econtract": {
+      "url": "https://api.econtract.online/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:ECONTRACT_API_KEY}"
+      }
+    }
+  }
+}

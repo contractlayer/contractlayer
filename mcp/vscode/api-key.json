@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "econtract": {
+      "type": "http",
+      "url": "https://api.econtract.online/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:econtract-api-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "econtract-api-key",
+      "type": "promptString",
+      "description": "eContract API key",
+      "password": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+mcp_servers:
+  econtract:
+    url: "https://api.econtract.online/mcp"
+    headers:
+      Authorization: "Bearer ${ECONTRACT_API_KEY}"

@@ -1,69 +1,48 @@
 # ContractLayer
 
-Contract AI layer for developers & AI agents.
+Contract infrastructure for developers and AI agents, by [eContract](https://econtract.online).
 
-------------------------------------------------------------------------
+Let an AI agent prepare a contract, send it for e-signature, follow up and archive the signed PDF, while every signature stays with a real person.
 
-## What is ContractLayer?
+## MCP server
 
-ContractLayer provides APIs and tools to:
-
--   Verify digital signatures
--   Analyze contract risk
--   Extract structured data
--   Automate contract workflows
-
-------------------------------------------------------------------------
-
-## 🚀 Projects
-
-### 🔐 Verify PDF Digital Signature
-
-Verify whether a contract has a valid digital signature.
-
-👉 https://github.com/contractlayer/verify-pdf
-
-------------------------------------------------------------------------
-
-### ✍️ Contract Management & Signing
-
-Create, manage, and sign contracts online.
-
-👉 https://github.com/contractlayer/contract-manager
-
-------------------------------------------------------------------------
-
-### ⚠️ Contract Risk Check
-
-Analyze contract risks and generate decisions for AI agents.
-
-👉 https://github.com/contractlayer/risk-check
-
-------------------------------------------------------------------------
-
-## ⚡ Quick Example
-
-``` bash
-curl -X POST https://api.econtract.online/verify-pdf \
-  -F "file=@contract.pdf"
+```text
+https://api.econtract.online/mcp
 ```
 
-------------------------------------------------------------------------
+Streamable HTTP. Sign in with your eContract account (OAuth 2.1) or send an API key as `Authorization: Bearer cl_live_…`. Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=online.econtract%2Fmcp) as `online.econtract/mcp` ([`server.json`](server.json)).
 
-## 🧠 Use Cases
+| Tool | What it does |
+|---|---|
+| `send_contract` | Create a contract from a PDF/DOCX (inline, link or template) and send it to the signers, in order or in parallel; place each signature next to a text with `signatureAnchor` |
+| `list_contracts`, `get_contract` | What is waiting, who has signed, what comes next |
+| `get_signing_links`, `send_reminder`, `void_contract` | Share personal signing links, chase signers, cancel |
+| `download_signed_document`, `get_audit_trail` | The signed PDF and the signing evidence |
+| `verify_pdf` | Check the digital signatures in any PDF |
+| `list_templates`, `get_template`, `analyze_contract` | Templates and an AI summary of a contract |
 
--   AI agents deciding whether to sign contracts
--   CRM auto contract validation
--   HR offer verification
+Agents can prepare, send and follow up, but they can never sign or decline for someone: each signer signs through their own link.
 
-------------------------------------------------------------------------
+### Connect your client
 
-## 🌐 API
+Configs and steps for each client are in [`mcp/`](mcp/README.md): [Claude](mcp/claude/README.md), [Claude Code](mcp/claude-code/README.md), [ChatGPT](mcp/chatgpt/README.md), [Codex](mcp/codex/README.md), [Cursor](mcp/cursor/README.md), [VS Code](mcp/vscode/README.md), [Gemini CLI](mcp/gemini-cli/README.md), [Muse Code](mcp/muse-code/README.md), [OpenClaw](mcp/openclaw/README.md), [Hermes Agent](mcp/hermes/README.md).
 
-https://api.econtract.online
+## Repositories
 
-------------------------------------------------------------------------
+| Repository | What it is |
+|---|---|
+| [verify-pdf](https://github.com/contractlayer/verify-pdf) | Verify the digital signatures in any PDF with one API call, no API key |
+| [contract-manager](https://github.com/contractlayer/contract-manager) | REST API examples (Node.js, Python): send a contract, place signatures, share links, download the signed PDF and audit trail |
 
-## 📌 Vision
+More examples (agent SDKs, workflow tools) are added alongside the guides on the [eContract blog](https://econtract.online/blog).
 
-We are building the contract layer for modern software and AI agents.
+## Links
+
+- [eContract](https://econtract.online): free e-signatures with PAdES signatures, RFC 3161 timestamps and a hash-chained audit trail
+- [Developer docs](https://developers.econtract.online/docs) and [MCP reference](https://developers.econtract.online/docs/mcp)
+- [OpenAPI document](https://api.econtract.online/api/v1/openapi.json)
+- [Verify a signed PDF](https://econtract.online/verify)
+
+## License
+
+MIT

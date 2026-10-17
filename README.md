@@ -33,6 +33,7 @@ Configs and steps for each client are in [`mcp/`](mcp/README.md): [Claude](mcp/c
 |---|---|
 | [verify-pdf](https://github.com/contractlayer/verify-pdf) | Verify the digital signatures in any PDF with one API call, no API key |
 | [contract-manager](https://github.com/contractlayer/contract-manager) | REST API examples (Node.js, Python): send a contract, place signatures, share links, download the signed PDF and audit trail |
+| [claude-agent-contracts](https://github.com/contractlayer/claude-agent-contracts) | A contract-signing agent built with the Claude Agent SDK: plain-language requests, eContract tools only, no cancelling unless allowed |
 
 More examples (agent SDKs, workflow tools) are added alongside the guides on the [eContract blog](https://econtract.online/blog).
 

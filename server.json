@@ -3,8 +3,12 @@
   "name": "online.econtract/mcp",
   "title": "eContract",
   "description": "Send contracts for e-signature, track signing, get signed PDFs and audit trails, verify any PDF.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://econtract.online/mcp",
+  "repository": {
+    "url": "https://github.com/contractlayer/contractlayer",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://econtract.online/logo.png",

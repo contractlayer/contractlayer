@@ -8,6 +8,8 @@ Server URL: `https://api.econtract.online/mcp` (Streamable HTTP)
 
 Recommended for personal use: you sign in once and the client keeps the connection alive.
 
+**[Install in VS Code (GitHub Copilot) with one click](https://insiders.vscode.dev/redirect/mcp/install?name=econtract&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.econtract.online%2Fmcp%22%7D)**
+
 1. Open the Command Palette (Ctrl+Shift+P, or Shift+Cmd+P on macOS) and run MCP: Add Server.
 2. Choose HTTP, paste https://api.econtract.online/mcp and name the server econtract.
 3. When VS Code asks you to sign in, approve access on the eContract page that opens.

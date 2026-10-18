@@ -8,6 +8,8 @@ Server URL: `https://api.econtract.online/mcp` (Streamable HTTP)
 
 Recommended for personal use: you sign in once and the client keeps the connection alive.
 
+**[Install in Cursor with one click](https://cursor.com/install-mcp?name=econtract&config=eyJ1cmwiOiJodHRwczovL2FwaS5lY29udHJhY3Qub25saW5lL21jcCJ9)**
+
 1. Add eContract to ~/.cursor/mcp.json (all projects) or .cursor/mcp.json (one project).
 2. Reload Cursor and, when it asks you to authenticate the server, sign in to eContract in the browser.
 
